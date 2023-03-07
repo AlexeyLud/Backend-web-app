@@ -1,0 +1,17 @@
+D:\web-app\back-web\src\main\java\come\alex\grow\serviceImpl\PatServiceImpl.java
+D:\web-app\back-web\src\main\java\come\alex\grow\configs\SwaggerConfig.java
+D:\web-app\back-web\src\main\java\come\alex\grow\controllers\ReceptController.java
+D:\web-app\back-web\src\main\java\come\alex\grow\services\RecService.java
+D:\web-app\back-web\src\main\java\come\alex\grow\entity\Recepts.java
+D:\web-app\back-web\src\main\java\come\alex\grow\repositories\PatientsRepository.java
+D:\web-app\back-web\src\main\java\come\alex\grow\services\PatService.java
+D:\web-app\back-web\src\main\java\come\alex\grow\controllers\PatientController.java
+D:\web-app\back-web\src\main\java\come\alex\grow\entity\Patients.java
+D:\web-app\back-web\src\main\java\come\alex\grow\services\MedService.java
+D:\web-app\back-web\src\main\java\come\alex\grow\serviceImpl\RecServiceImpl.java
+D:\web-app\back-web\src\main\java\come\alex\grow\repositories\ReceptsRepository.java
+D:\web-app\back-web\src\main\java\come\alex\grow\entity\Medicines.java
+D:\web-app\back-web\src\main\java\come\alex\grow\LabaApplication.java
+D:\web-app\back-web\src\main\java\come\alex\grow\repositories\MedicinesRepository.java
+D:\web-app\back-web\src\main\java\come\alex\grow\serviceImpl\MedServiceImpl.java
+D:\web-app\back-web\src\main\java\come\alex\grow\controllers\MedecineController.java

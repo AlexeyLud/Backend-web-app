@@ -1,0 +1,17 @@
+come\alex\grow\controllers\MedecineController.class
+come\alex\grow\controllers\PatientController.class
+come\alex\grow\repositories\MedicinesRepository.class
+come\alex\grow\entity\Medicines.class
+come\alex\grow\serviceImpl\PatServiceImpl.class
+come\alex\grow\entity\Patients.class
+come\alex\grow\serviceImpl\MedServiceImpl.class
+come\alex\grow\serviceImpl\RecServiceImpl.class
+come\alex\grow\services\MedService.class
+come\alex\grow\services\RecService.class
+come\alex\grow\controllers\ReceptController.class
+come\alex\grow\LabaApplication.class
+come\alex\grow\services\PatService.class
+come\alex\grow\configs\SwaggerConfig.class
+come\alex\grow\entity\Recepts.class
+come\alex\grow\repositories\PatientsRepository.class
+come\alex\grow\repositories\ReceptsRepository.class

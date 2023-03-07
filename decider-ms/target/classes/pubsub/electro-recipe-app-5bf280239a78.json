@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "electro-recipe-app",
+  "private_key_id": "5bf280239a78222e0dc8f862b3ef07f4863c2578",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUPdoC44Q8yR62\nuMLvaQRsqWOmRMp9kpq3at9mXICIhvXRvhZWEpz5l+ZXN8JdThqES9ghTtPcfzrV\nbPkryUf46yVi5TbXsCv9isnhkBHYvDuI5oiuh8EU8lHv0xJNhZBSzZi/RhjLU0HU\nDo1XwHMcBhclTZE8C8ddTX+1mzlQURpIS5mBWnYG8C83I8Isybr9ap9+wFLIF+/j\nWS3S5aK0tpZIQcZJ+2y+ilLC4adIIbvG6E3Mhh994JYMFHmljxUa3ndvIdJdIN5v\njB8ldVmLhezk753EoZrZ6Ds0SN/RUpK2BEVk6bywoS+qiNxJvH+1TyzPqffJlCFP\nUVDo70qzAgMBAAECggEAVbSOU0lNroAmq3GLokLdmwWB7HPt8uxfFr8M7FhhPQCG\nxoZEnchRZEbPKJwnHCd8dLztz3F2Ax3Lg8DIE8Lpkd5e0AMwdMO6190SLchQNJ26\nSsuRGS1PrmY16SrqQqyzPYSxcFfdjkmWFQw1TmCz+vaIpTMf+UfmX0p6zjqa18/U\nAasBaCRnyqhIVZMlxkEfH3RLaXzXErIq0Wie6oFwfCxosMYMPXAVpnncPXFfAD0N\n+DQuHPiQn0PuSUBdGYXZ/bHJLPqDVUZL2NFHzQVj4ppkdxgjVRi0C3T72MXsMllm\nw+2tBSYOXM2SYFKUMNVtYNIF6PAAlqHirC37r4UZgQKBgQDvon2SQ9mLWYLfz9Qe\nLzPoWkL5zhs5hFW63AsKl+6sRE46Ormf3cYRnkMYS8nUJ/l18xeHlv4PBUdKNk3Y\nCxYJPDbT2+cwgOrdaST79gaIWvJO5PnPhmv8MjAIljbi30keUcPO1QcYwoqHzWNn\nBiBqyKtcqD+3hrvCG1Zvp73iMwKBgQDivHMwqjWidea9WOSmbd/UcM+QKMaQIVpj\nT1QhxzITlXFrg5BGiws7iYdjuBPUhbjTAdq0qQPQfkgI7XvaXODbCwsIo7rb5vsg\nRgwf7WLmh3lvhkEM5ldjU7iIidOCHtfGsGzQ3UVxliYaMG8mP5CqRz3GymHw/d1p\n4H9i9aV1gQKBgQDPb45ZvcgkO4Dx8vsAggXh/bh6e7LPcEGx9mbMbcaacqpw94LV\n42lguOoFrx1wPIZSVvMoWUllgUE7+ZQbD0WtCuW/MV2IfCBTN4BfZ5IyGOAl8Upa\nHVd+wYcY98ddTsIBr+/bLEbvZP/8HIwOk5weM8U6+R3m5YfEuFtzXfYeRwKBgQCK\n7uquoT2oRRKUZ8oD6UPESzQEo9e4LZfTTqLA5+xZb7NGLCHV+BFz8/vQMNWF3kK4\nmWRIW2CI+zhssAi6bzshPY0PSDSR1uF+jy2SysVVeSICIoPtwZ8+r+hdUgcWrouN\npkGnYk7RIS5L0e3pw/2DOZAzJYQKRaTM4dFs9BTlAQKBgDJw5ctIQlE+d9l6hp9P\ngpwjHjN+j9YoiUTONYHDqX3XuswBq3aK/PPpMgMQuhT5iQ2ZpEp2OZpE6oeSwvod\nJicF60lTKgLGBl9qlsSwnosg7nFNghRKQf/yJZ1HUw4t0A4mQ/hjsvM5ideloYl8\n58wa8CZDprufVYCkn9Hj8lxX\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsubproducer@electro-recipe-app.iam.gserviceaccount.com",
+  "client_id": "104914082255179754864",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsubproducer%40electro-recipe-app.iam.gserviceaccount.com"
+}

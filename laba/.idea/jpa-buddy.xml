@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" reUseTableSchema="true">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="snapshotDbValue" value="3d80bda5-c84a-4421-9392-92981d8779fa" />
+    <option name="reverseEngineeringLastDbConnectionId" value="3d80bda5-c84a-4421-9392-92981d8779fa" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/come/alex/grow" />
+    <option name="newEntityIdStrategy" value="Identity" />
+  </component>
+</project>

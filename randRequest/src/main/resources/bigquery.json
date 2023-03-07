@@ -1,0 +1,18 @@
+{
+  "sourceFormat": "BIGTABLE",
+  "sourceUris": ["https://googleapis.com/bigtable/projects/electro-recipe-app/instances/bigt-instan-1/tables/my-bigtable"],
+  "bigtableOptions": {
+    "columnFamilies": [
+      {
+        "familyId": "my-family",
+        "type": "INTEGER",
+        "encoding": "BINARY",
+        "columns": [
+          { "qualifierString": "HTTP Name", "type": "STRING" },
+          { "qualifierString": "Status", "type": "STRING" },
+          { "qualifierString": "Info", "type": "STRING" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,795 @@
+{
+  "basePath": "/",
+  "host": "localhost:8080",
+  "info": {
+    "description": "How to generate Swagger documentation for your Rest API",
+    "version": "1.0",
+    "title": "Swagger2 Api Documentation",
+    "termsOfService": "urn:tos",
+    "contact": {
+      "name": "Java Dev Journal",
+      "url": "www.javadevjournal.com",
+      "email": "contact-us@javadevjournal.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "paths": {
+    "/medicines/add": {
+      "post": {
+        "tags": [
+          "medecine-controller"
+        ],
+        "summary": "Добавление лекарства",
+        "operationId": "createMedicineUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "description": "date",
+            "required": true,
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "doza",
+            "in": "query",
+            "description": "doza",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Лекарство добавлено",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для добавления лекарства"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Лекарство не добавлено"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/medicines/delete/{id}": {
+      "delete": {
+        "tags": [
+          "medecine-controller"
+        ],
+        "summary": "Удаление лекарства",
+        "operationId": "deleteMedicineUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Лекарство удалено",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Вы не ввели id для удаления лекарства"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Лекарство не удалено"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/medicines/get-all": {
+      "get": {
+        "tags": [
+          "medecine-controller"
+        ],
+        "summary": "Получение всех лекарств",
+        "operationId": "getAllMedicinesUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "Лекарства найдены",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Лекарства не найдены"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/medicines/get-one/{id}": {
+      "get": {
+        "tags": [
+          "medecine-controller"
+        ],
+        "summary": "Получение одного лекарства",
+        "operationId": "getOneMedicineUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Лекарство найдено",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Вы не ввели id для получения лекарства"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Лекарство не найдено"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/medicines/update/{id}": {
+      "put": {
+        "tags": [
+          "medecine-controller"
+        ],
+        "summary": "Обновление лекарства",
+        "operationId": "putMedicineUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "description": "date",
+            "required": true,
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "doza",
+            "in": "query",
+            "description": "doza",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Лекарство обновлено",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для обновления лекарства"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Лекарства не обновлено"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/patients/add": {
+      "post": {
+        "tags": [
+          "patient-controller"
+        ],
+        "summary": "Добавление пациента",
+        "operationId": "createPatientUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "age",
+            "in": "query",
+            "description": "age",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "surname",
+            "in": "query",
+            "description": "surname",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Пациент добавлен",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для добавления пациента"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Пациент не добавлен"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/patients/delete/{id}": {
+      "delete": {
+        "tags": [
+          "patient-controller"
+        ],
+        "summary": "Удаление пациента",
+        "operationId": "deletePatientUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Пациент удален",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Вы не ввели id для удаления пациента"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Пациент не удален"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/patients/get-all": {
+      "get": {
+        "tags": [
+          "patient-controller"
+        ],
+        "summary": "Получение всех пациентов",
+        "operationId": "getAllPatientsUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "Пациенты найдены",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Пациенты не найдены"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/patients/get-one/{id}": {
+      "get": {
+        "tags": [
+          "patient-controller"
+        ],
+        "summary": "Получение одного пациента",
+        "operationId": "getOnePatientUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Пациент найден",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Вы не ввели id для получения пациента"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Пациент не найден"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/patients/update/{id}": {
+      "put": {
+        "tags": [
+          "patient-controller"
+        ],
+        "summary": "Обновление пациента",
+        "operationId": "putPatientUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "age",
+            "in": "query",
+            "description": "age",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "surname",
+            "in": "query",
+            "description": "surname",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Пациент обновлен",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для обновления пациента"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Пациент не обновлен"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/recepts/add": {
+      "post": {
+        "tags": [
+          "recept-controller"
+        ],
+        "summary": "Добавление рецепта",
+        "operationId": "createReceptUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "med_id",
+            "in": "query",
+            "description": "med_id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "pat_id",
+            "in": "query",
+            "description": "pat_id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "sign",
+            "in": "query",
+            "description": "sign",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Рецепт добавлен",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для добавления рецепта"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Рецепт не добавлен"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/recepts/delete/{id}": {
+      "delete": {
+        "tags": [
+          "recept-controller"
+        ],
+        "summary": "Удаление рецепта",
+        "operationId": "deleteReceptUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Рецепт удален",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Вы не ввели id для удаления рецепта"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Рецепт не удален"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/recepts/get-all": {
+      "get": {
+        "tags": [
+          "recept-controller"
+        ],
+        "summary": "Получение всех рецептов",
+        "operationId": "getAllReceptsUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "Рецепты найдены",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Рецепты не найдены"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/recepts/get-one/{id}": {
+      "get": {
+        "tags": [
+          "recept-controller"
+        ],
+        "summary": "Получение одного рецепта",
+        "operationId": "getOneReceptUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Рецепт найден",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Вы не ввели id для получения рецепта"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Рецепт не найден"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/recepts/update/{id}": {
+      "put": {
+        "tags": [
+          "recept-controller"
+        ],
+        "summary": "Обновление рецепта",
+        "operationId": "putReceptUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "med_id",
+            "in": "query",
+            "description": "med_id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "pat_id",
+            "in": "query",
+            "description": "pat_id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "sign",
+            "in": "query",
+            "description": "sign",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Рецепт обновлен",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Вы не ввели данные для обновления рецепта"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Рецепт не обновлен"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "swagger": "2.0",
+  "tags": [
+    {
+      "name": "medecine-controller",
+      "description": "Medecine Controller"
+    },
+    {
+      "name": "patient-controller",
+      "description": "Patient Controller"
+    },
+    {
+      "name": "recept-controller",
+      "description": "Recept Controller"
+    }
+  ]
+}

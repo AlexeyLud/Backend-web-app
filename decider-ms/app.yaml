@@ -1,0 +1,4 @@
+service: decider-ms
+runtime: custom
+env: flex
+instance_class: F2
